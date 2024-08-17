@@ -4,10 +4,28 @@ import '../styles/global.css';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Greeting from '../components/Greeting';
 
-const pageTitle = 'Página de inicio';
+const pageTitle = 'Bienvenidos a Gatos y Mascotas';
 
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <h2>Mi impresionante subtítulo del blog</h2>
-  <Greeting client:load messages={["Hola", "Qué tal", "Hola a todos"]} />
+  <h2>Tu guía completa para el cuidado de tus mascotas</h2>
+  <div class="container">
+    <div class="content">
+        <div class="box" id="gatos">
+            <img src="images/cats.jpg" alt="Gato">
+            <h2>Todo sobre Gatos</h2>
+            <p>Aprende más sobre el comportamiento, salud, y cuidados de los gatos.</p>
+        </div>
+        <div class="box" id="perros">
+            <img src="images/dogs.jpg" alt="Perro">
+            <h2>Todo sobre Perros</h2>
+            <p>Consejos y guías para cuidar de tu mejor amigo canino.</p>
+        </div>
+        <div class="box" id="consejos">
+            <img src="images/bunnies.jpg" alt="Consejos">
+            <h2>Consejos para Mascotas</h2>
+            <p>Encuentra consejos prácticos para mejorar la vida de tus mascotas.</p>
+        </div>
+    </div>
+</div>
 </BaseLayout>
