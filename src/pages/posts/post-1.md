@@ -1,26 +1,18 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'Mi primera publicación en el blog'
+title: "Por Qué Tu Amigo Felino Actúa Tan Divertido"
 pubDate: 2022-07-01
-description: 'Este es la primera publicación de mi nuevo blog Astro.'
-author: 'Alumno de Astro'
+description: "Cat fun facts"
+author: "Jupadev"
 image:
-    url: 'https://docs.astro.build/assets/full-logo-light.png'
-    alt: 'El logotipo completo de Astro.'
+  url: "https://docs.astro.build/assets/full-logo-light.png"
+  alt: "El logotipo completo de Astro."
 tags: ["astro", "bloguear", "aprender en público"]
 ---
-# Mi primera publicación en el blog
 
-¡Bienvenido a mi _nuevo blog_ sobre el aprendizaje de Astro! Aquí, voy a compartir mi viaje de aprendizaje a medida que construyo un nuevo sitio web.
 
-## Lo que he conseguido
+## 1. **Por Qué Tu Amigo Felino Actúa Tan Divertido**
 
-1. **Instalación de Astro**: En primer lugar, he creado un nuevo proyecto Astro y configurar mis cuentas en línea.
+**Resumen**: Esta publicación explora los comportamientos divertidos y, a menudo, misteriosos de los gatos, como amasar, ronronear o los repentinos “zoomies”. Cada comportamiento va acompañado de un dato curioso o una explicación científica, ofreciendo a los lectores una mejor comprensión de sus compañeros felinos.
 
-2. **Creación de páginas**: Luego aprendí cómo hacer páginas creando nuevos archivos `.astro` y colocándolos en la carpeta `src/pages/`.
-
-3. **Creación de publicaciones**: ¡Esta es mi primera publicación! ¡Ahora tengo páginas de Astro y publicaciónes en Markdown!
-
-## Próximos pasos
-
-Terminaré el tutorial de Astro, y luego seguiré añadiendo más publicaciones. Mira este espacio para más por venir.
+**Ejemplo de Dato Curioso**: Los gatos amasan como un instinto residual de cuando eran gatitos, cuando usaban este movimiento para estimular el flujo de leche de su madre.
