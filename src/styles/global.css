@@ -21,6 +21,12 @@ h1 {
   font-size: 2.5rem;
 }
 
+.poster {
+  max-width: 80ch;
+  width: 100%;
+  min-height: 300px;
+}
+
 * estilos de la barra de navegación*/
 .hamburger {
   padding-right: 20px;
