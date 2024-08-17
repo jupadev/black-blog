@@ -6,7 +6,7 @@ const { frontmatter } = Astro.props;
   <p>{frontmatter.pubDate.toString().slice(0,10)}</p>
   <p><em>{frontmatter.description}</em></p>
   <p>Escrito por: {frontmatter.author}</p>
-  <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
+  <img src={frontmatter.image.url} class="image" alt={frontmatter.image.alt} />
   <slot />
   <div class="tags">
     {frontmatter.tags.map((tag) => (
@@ -31,5 +31,9 @@ const { frontmatter } = Astro.props;
     padding: .5em 1em;
     font-size: 1.15em;
     background-color: #F8FCFD;
+  }
+  .image {
+    width: 100%;
+    max-width: 80ch;
   }
 </style>

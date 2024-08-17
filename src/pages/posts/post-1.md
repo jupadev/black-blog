@@ -5,8 +5,8 @@ pubDate: 2022-07-01
 description: "Cat fun facts"
 author: "Jupadev"
 image:
-  url: "https://docs.astro.build/assets/full-logo-light.png"
-  alt: "El logotipo completo de Astro."
+  url: "/images/cat1.jpg"
+  alt: "gatos."
 tags: ["astro", "bloguear", "aprender en público"]
 ---
 

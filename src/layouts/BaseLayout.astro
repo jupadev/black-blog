@@ -3,6 +3,7 @@ import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 import Hamburguer from '../components/Hamburguer.astro';
+import Themeicon from '../components/Themeicon.astro';
 
 const { pageTitle } = Astro.props;
 ---
@@ -16,6 +17,7 @@ const { pageTitle } = Astro.props;
   </head>
   <body>
     <Hamburguer />
+    <Themeicon />
 		<Navigation />
     <h1>{pageTitle}</h1>
     <slot />
