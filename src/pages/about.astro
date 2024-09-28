@@ -1,42 +1,36 @@
 ---
-import Navigation from '../components/Navigation.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/global.css';
 
 const pageTitle = "Sobre mi";
 
 const identity = {
-  firstName: "Sarah",
-  country: "Canada",
-  occupation: "Escritor técnico",
-  hobbies: ["fotografia", "observación de aves", "peñarol"],
+  firstName: "Juan Pablo Vargas",
+  location: "Córdoba, Argentina",
+  occupation: "Software Engineer",
+  hobbies: ["Gatos", "Vida al aire libre", "Cafe", "Aprender"],
 };
 
-const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Redacción de documentos"];
+const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Cat lover, es una soft skill!"];
 
-const happy = true;
-const finished = true;
-const goal = 3;
-
-const skillColor = "navy"
+const skillColor = "#5438b4"
 ---
 <BaseLayout pageTitle={pageTitle}>
     <p>He aquí algunos datos sobre mí:</p>
     <ul>
       <li>Me llamo {identity.firstName}.</li>
-      <li>Vivo en {identity.country} y trabajo como {identity.occupation}.</li>
-      {identity.hobbies.length >= 2 &&
-        <li>Dos de mis aficiones son: {identity.hobbies[0]} y {identity.hobbies[1]}</li>
-      }
+      <li>Vivo en {identity.location} y trabajo como {identity.occupation}.</li>
+      <li>Mis aficiones son: {identity.hobbies.join(", ")}</li>
+      
     </ul>
     <p>Mis habilidades son:</p>
     <ul>
       {skills.map((skill) => <li class="skill">{skill}</li>)}
     </ul>
-
-    {happy && <p>¡Estoy feliz de aprender Astro!</p>}
-
-    {finished && <p>¡He terminado este tutorial!</p>}
-
-    {goal === 3 ? <p>Mi objetivo es terminar en 3 días.</p> : <p>Mi objetivo no son 3 días.</p>}
+    <style define:vars={{skillColor}}>
+      .skill {
+        color: var(--skillColor);
+        font-weight: bold;
+      }
+    </style>
 </BaseLayout>
